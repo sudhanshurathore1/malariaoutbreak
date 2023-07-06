@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Malaria Outbreak Detection</title>
+</head>
+<body>
+<div class="container">
+    <h1>Malaria Outbreak detection</h1>
+    <form id="outbreakForm" action="/predict" method="post">
+      <label for="CityInput">Enter City :</label>
+      <input type="text" id="CityInput" name="CityInput" required>
+        <label for="RainfallInput">Enter Rainfall Value(0 to 40) :</label>
+      <input type="text" id="RainfallInput" name="rainfallInput" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="outputBox">
+      <h2 id="Outbreak">{{pred}}</h2>
+    </div>
+  </div>
+
+</body>
+</html>
