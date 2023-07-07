@@ -14,7 +14,7 @@ pandas
 python-dateutil
 pytz
 requests
-scikit-learn==0.24.2
+scikit-learn
 scipy
 six
 threadpoolctl
