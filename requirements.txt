@@ -22,4 +22,3 @@ tzdata
 urllib3
 Werkzeug
 gunicorn
-sklearn
