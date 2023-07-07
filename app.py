@@ -64,7 +64,7 @@ def predict_class():
     print(final)
     model = pickle.load(open('model.pkl', 'rb'))
     sst = pickle.load(open('sst.pkl', 'rb'))
-    prediction = model.predict_proba(sst.transform(final))
+    prediction = model.predict_proba(final)
     output = '{0:.{1}f}'.format(prediction[0][1], 2)
     print(output)
 
