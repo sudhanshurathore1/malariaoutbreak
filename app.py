@@ -19,7 +19,7 @@ def predict_class():
     print([(x) for x in request.form.values()])
     features = [(x) for x in request.form.values()] #maintain the input same as the data that u trained model
     city=features[0]
-    rainfall=int(features[1])
+    rainfall=float(features[1])
     print(city)
     print(rainfall)
     api_key1 = 'ad62ecebb7931902c9fdbfefb78f3277'
